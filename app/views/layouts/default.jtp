@@ -1,0 +1,43 @@
+<html>
+<head>
+  <title>{{title_for_layout}}</title>
+
+  <link rel="stylesheet" type="text/css" href="{{base}}assets/css/bootstrap.css">
+  <link rel="stylesheet" type="text/css" href="{{base}}assets/css/footer.css">
+  <link rel="stylesheet" type="text/css" href="{{base}}assets/css/bootstrap-responsive.css">
+
+</head>
+<body>
+
+  <div class="header">
+
+    <div class="navbar">
+      <div class="navbar-inner">
+        <a class="brand" href="#">Menu</a>
+        <ul class="nav">
+          <li><a href="{{base}}pages">Home</a></li>
+          <li><a href="{{base}}testes">Testes</a></li>
+        </ul>
+      </div>
+    </div>
+
+  </div>
+
+  <div class="container"> 
+
+    {{> content_for_layout}}
+
+  </div>
+
+  <div class="footer">
+
+    <div class="container">
+      <p>Framework developed by VitorVRS</p>
+    </div>
+
+  </div>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
+
+</body>
+</html>

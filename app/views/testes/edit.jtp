@@ -1,0 +1,14 @@
+<h1>Cadastro Teste</h1>
+
+<div class="main">
+
+  <form method="post" action="{{request.url}}">
+
+    <label>Campo 1</label>
+    <input type="text" value="{{#if request.body.data.Teste.campo}}{{request.body.data.Teste.campo}}{{/if}}" name="data[Teste][campo]" />
+
+    <button type="submit">Salvar</button>
+
+  </form>
+
+</div>
